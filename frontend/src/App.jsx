@@ -5,7 +5,7 @@ import HomePage from "./pages/HomePage"
 import ExplorePage from "./pages/ExplorePage"
 import {Route,Routes} from 'react-router-dom'
 import Sidebar from './components/Sidebar'
-
+import {Toaster} from "react-hot-toast"
 function App() {
   return (
     <div className='flex text-white'>
@@ -19,8 +19,8 @@ function App() {
         <Route path='/likes' element={<LikesPage />}/>
 
       </Routes>
-      <footer>Footer</footer>
-    </div>
+      <Toaster />
+          </div>
     </div>
   )
 }
